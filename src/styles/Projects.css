@@ -1,0 +1,120 @@
+/* Projects Section */
+.projects {
+  padding: 60px 15px; /* Added horizontal padding for better spacing on smaller screens */
+  background-color: #051622; /* Background Color */
+  font-family: Arial, sans-serif; /* Ensures consistent font style */
+  border-radius: 15px;
+}
+
+/* Section Title */
+.projects h1 {
+  font-size: 2.5rem;
+  color: #deb992; /* Text Color */
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase; /* Optional: Adds emphasis with uppercase text */
+}
+
+/* Project Grid */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 20px; /* Spacing between project cards */
+  max-width: 1200px; /* Restricts grid width */
+  margin: 0 auto; /* Centers the grid */
+}
+
+/* Project Card */
+.project-card {
+  background-color: #1ba098; /* Button Color for project cards */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  overflow: hidden; /* Ensures no content overflow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transition */
+}
+
+/* Hover Effects for Project Cards */
+.project-card:hover {
+  transform: scale(1.05); /* Enlarges slightly on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increases shadow on hover */
+}
+
+/* Project Image */
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* Ensures image fits properly without distortion */
+}
+
+/* Project Content */
+.project-content {
+  padding: 20px;
+}
+
+/* Project Title */
+.project-content h2 {
+  font-size: 1.75rem;
+  color: #deb992; /* Text Color */
+  margin-bottom: 15px;
+  text-transform: capitalize; /* Optional: Capitalized project titles */
+}
+
+/* Project Description */
+.project-content p {
+  font-size: 1.125rem;
+  color: #deb992; /* Text Color */
+  line-height: 1.6;
+  margin-bottom: 15px;
+  text-align: justify; /* Aligns description text neatly */
+}
+
+/* Project Links Container */
+.project-links {
+  margin-top: 15px;
+  text-align: center; /* Centers the links */
+}
+
+/* Project Links */
+.project-link {
+  display: inline-block;
+  margin: 0 10px; /* Horizontal spacing between links */
+  padding: 8px 15px; /* Adds padding for better click area */
+  font-size: 1rem;
+  color: #051622; /* Button Color */
+  background-color: #deb992; /* Text Color as background */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* Removes underline */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover transition */
+}
+
+/* Hover Effects for Project Links */
+.project-link:hover {
+  background-color: #051622; /* Reverses the background and text colors */
+  color: #deb992; /* Text Color */
+  text-decoration: underline; /* Adds underline on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 800px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+     /* Stacks project cards in a single column */
+  }
+
+  .projects h1 {
+    font-size: 2rem; /* Adjusts title size for smaller devices */
+  }
+
+  .project-content h2 {
+    font-size: 1.5rem; /* Smaller project titles */
+  }
+
+  .project-content p {
+    font-size: 1rem; /* Adjust font size for readability */
+  }
+
+  .project-link {
+    font-size: 0.9rem; /* Smaller link text */
+    padding: 6px 12px; /* Adjust padding for better alignment */
+  }
+}

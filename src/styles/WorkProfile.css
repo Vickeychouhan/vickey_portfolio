@@ -1,0 +1,167 @@
+/* Work Profile Section */
+.work-profile {
+  padding: 60px 20px; /* Adjusted for better responsiveness */
+  background-color: #051622; 
+  font-family: Arial, sans-serif;
+  border-radius: 15px;
+  color: #deb992; /* Text Color */
+}
+
+/* Section Title */
+.work-profile h1 {
+  font-size: 2.8rem;
+  color: #deb992; /* Text Color */
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase; /* Optional: Makes the title uppercase for emphasis */
+}
+
+/* Subsection Titles */
+.work-profile h2 {
+  font-size: 2rem;
+  color: #deb992; /* Text Color */
+  margin-bottom: 20px;
+  border-bottom: 2px solid #1ba098; /* Button Color */
+  padding-bottom: 10px;
+  display: inline-block;
+  text-transform: capitalize; /* Optional: Makes the title capitalized */
+}
+
+/* Experience & Education Containers */
+.work-profile .experience,
+.work-profile .education {
+  max-width: 800px;
+  margin: 0 auto 30px;
+  background-color: #1ba098; /* Button Color */
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* Hover Effects */
+.work-profile .experience:hover,
+.work-profile .education:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+/* Items in Experience and Education Sections */
+.work-profile .experience-item,
+.work-profile .education-item {
+  margin-bottom: 20px;
+  padding-left: 20px;
+  border-left: 4px solid #deb992; /* Default border */
+  transition: border-left-color 0.3s ease; /* Smooth transition for border color */
+}
+
+/* Hover Effects for Items */
+.work-profile .experience-item:hover {
+  border-left-color: #1ba098; /* Changes border color on hover */
+}
+
+.work-profile .education-item:hover {
+  border-left-color: #deb992; /* Changes border color on hover */
+}
+
+/* Section Headers */
+.work-profile h3 {
+  font-size: 1.8rem;
+  color: #deb992; /* Text Color */
+  margin-bottom: 15px;
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.work-profile h3:hover {
+  color: #1ba098; /* Hover text color */
+}
+
+/* Paragraphs */
+.work-profile p {
+  font-size: 1.1rem;
+  color: #deb992; /* Text Color */
+  line-height: 1.6;
+  margin-bottom: 10px;
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+.work-profile p:hover {
+  color: #1ba098; /* Changes text color on hover */
+}
+
+/* Lists */
+.work-profile ul {
+  list-style-type: square;
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+.work-profile ul li {
+  font-size: 1.1rem;
+  color: #deb992; /* Text Color */
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+.work-profile ul li:hover {
+  color: #1ba098; /* Changes list item color on hover */
+}
+
+/* Adjusted Borders */
+.work-profile .education-item {
+  border-left: 4px solid #1ba098; /* Button Color */
+}
+
+.work-profile .experience-item {
+  border-left: 4px solid #deb992; /* Text Color */
+}
+
+/* Responsive Design */
+@media (max-width: 800px) {
+  /* Mobile View Adjustments */
+  .home-about, .home-projects, .home-skills, .home-contact {
+    padding: 0px; /* Added padding for better spacing */
+    margin-top: 60px; /* Reduced top margin for a more compact layout */
+  }
+
+
+  /* Section Title */
+  .work-profile h1 {
+    font-size: 2.2rem; /* Adjust font size for smaller screens */
+  }
+
+  /* Subsection Titles */
+  .work-profile h2 {
+    font-size: 1.6rem; /* Adjust subsection title size */
+  }
+
+  /* Experience & Education Containers */
+  .work-profile .experience,
+  .work-profile .education {
+    padding: 20px; /* Reduce padding */
+    margin-bottom: 20px; /* Adjust spacing */
+    width: 100%; /* Ensures full-width containers on mobile */
+  }
+
+  /* Section Headers */
+  .work-profile h3 {
+    font-size: 1.5rem; /* Smaller headers */
+  }
+
+  /* Paragraphs and List Items */
+  .work-profile p,
+  .work-profile ul li {
+    font-size: 1rem; /* Adjust font size for better readability */
+  }
+
+  /* Experience and Education Items */
+  .work-profile .experience-item,
+  .work-profile .education-item {
+    padding-left: 15px; /* Reduced padding for mobile view */
+    font-size: 1rem; /* Adjust font size */
+  }
+
+  /* Lists */
+  .work-profile ul {
+    padding-left: 10px; /* Adjust padding */
+  }
+}

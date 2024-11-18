@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Change this to your desired color */
+  }
+  
+  .navbar {
+    margin-bottom: 20px;
+  }
+  
+  .home-section, .about-section, .projects-section, .skills-section, .contact-section {
+    padding: 60px 0;
+    background-color: transparent; /* Ensure sections are transparent to show the body background */
+  }
+  
+  .footer-section {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  h1, h2 {
+    margin-bottom: 20px;
+  }
+  
+  p {
+    margin-bottom: 20px;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  .profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 90%; /* Ensures the image is round */
+    object-fit: cover;
+    margin-left: auto; /* Ensures image is aligned to the right */
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: center; /* Aligns image to the center */
+    align-items: center; /* Centers image vertically within its container */
+  }
+  
+  .text-content {
+    text-align: left; /* Aligns text to the left */
+  }
+  
+  a {
+    color: #007bff;
+  }
+  
+  a:hover {
+    text-decoration: none;
+    color: #0056b3;
+  }
+  

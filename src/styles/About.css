@@ -1,0 +1,14 @@
+.about {
+    padding: 50px;
+  }
+  
+  .about h1 {
+    font-size: 2.5rem;
+    color: #444;
+  }
+  
+  .about p {
+    font-size: 1.125rem;
+    color: #777;
+  }
+  

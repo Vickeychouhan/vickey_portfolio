@@ -1,0 +1,101 @@
+/* Skills Section */
+.skills {
+  padding: 60px 15px; /* Added horizontal padding for better spacing on smaller screens */
+  background-color: #051622; /* Background Color */
+  font-family: Arial, sans-serif; /* Ensures consistent font style */
+  border-radius: 15px;
+}
+
+/* Section Title */
+.skills h1 {
+  font-size: 2.5rem;
+  color: #deb992; /* Text Color */
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase; /* Optional: Adds emphasis with uppercase text */
+}
+
+/* Skills Container */
+.skills-container {
+  display: flex;
+  justify-content: space-between; /* Spaces boxes evenly between left and right */
+  flex-wrap: wrap; /* Allows wrapping for better responsiveness */
+  gap: 20px; /* Adds spacing between skill categories */
+  margin: 0 auto; /* Centers the container */
+  max-width: 1200px; /* Restricts the width for better alignment */
+}
+
+/* Skill Category Boxes */
+.skills-category {
+  background-color: #1ba098; /* Button Color */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  width: 48%; /* Adjusts box width to allow for spacing */
+  text-align: center;
+  flex: 1; /* Makes all boxes equal in size */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transition */
+  margin-bottom: 20px; /* Adds space at the bottom between boxes */
+}
+
+/* Hover Effects for Skill Categories */
+.skills-category:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+/* Skill Category Titles */
+.skills-category h2 {
+  font-size: 1.75rem;
+  color: #deb992; /* Text Color */
+  margin-bottom: 15px;
+  text-transform: capitalize; /* Optional: Capitalized category titles */
+}
+
+/* Skills List */
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Spacing between skill items */
+  padding: 0; /* Ensures no extra padding */
+  margin: 0; /* Resets default margins */
+}
+
+/* Skill Items */
+.skill-item {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Spacing between icons and text */
+  font-size: 1.25rem;
+  color: #deb992; /* Text Color */
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover Effects for Skill Items */
+.skill-item:hover {
+  color: #1ba098; /* Changes text color on hover */
+  transform: scale(1.05); /* Slight enlargement on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 800px) {
+  .skills-container {
+    padding: 40px 9px; 
+  }
+
+  .skills-category {
+    width: 100%; /* Ensures full width on smaller screens */
+  }
+
+  .skills h1 {
+    font-size: 2rem; /* Adjusts title size for smaller devices */
+  }
+
+  .skills-category h2 {
+    font-size: 1.5rem; /* Smaller category titles */
+  }
+
+  .skill-item {
+    font-size: 1.1rem; /* Adjust font size for better readability */
+  }
+}
